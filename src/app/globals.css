@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.pointer {
-    cursor: pointer; /* Override any styles from li */
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 0.3s ease forwards;
   }

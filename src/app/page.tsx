@@ -16,6 +16,8 @@ export default function Home() {
         <EsquireComponents />
       </div>
 
+
+
       <div className='fixed flex items-end gap-2 right-10 bottom-10'>
         {isChatOpen && (
           <div className="h-[450px] bg-white w-[300px] relative border-2 rounded-xl">

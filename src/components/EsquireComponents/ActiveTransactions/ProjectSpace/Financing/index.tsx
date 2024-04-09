@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Financing = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenFinancing, setIsOpenFinancing] = useState(false);
-    const [isOpenList, setIsOpenList] = useState(true);
+    const [isOpenList, setIsOpenList] = useState(false);
     const [isOpenList2, setIsOpenList2] = useState(false);
     const [isOpenList3, setIsOpenList3] = useState(false);
     const [isCoinvest, setIsCoinvest] = useState(false);
@@ -79,9 +79,12 @@ const Financing = () => {
                     {isOpenFinancing && (
                         <>
                             <motion.div key="financing-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten ml-3">
-                                <li onClick={() => setIsOpenList(!isOpenList)} className='text-black cursor-pointer text-[16px] font-medium'>
-                                    1L and Revolver:
-                                </li>
+                                <div className='flex gap-2 items-center cursor-pointer' onClick={() => setIsOpenList(!isOpenList)} >
+                                    <li className='text-black text-[16px] font-medium'>
+                                        1L and Revolver
+                                    </li>
+                                    <Image src='/icons/downarrowsvg.svg' alt='' width={12} height={12} className={`mt-[2px] ${isOpenList ? 'duration-500 rotate-180' : 'duration-500 rotate-0'}`} />
+                                </div>
                                 <AnimatePresence>
                                     {isOpenList && (
                                         <motion.div key="li-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten" style={{ zIndex: -10 }}>
@@ -106,9 +109,12 @@ const Financing = () => {
                                 </AnimatePresence>
                             </motion.div>
                             <motion.div key="financing-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten ml-3">
-                                <li onClick={() => setIsOpenList2(!isOpenList2)} className='text-black cursor-pointer text-[16px] font-medium'>
-                                    2L:
-                                </li>
+                                <div className='flex gap-2 items-center cursor-pointer' onClick={() => setIsOpenList2(!isOpenList2)} >
+                                    <li className='text-black text-[16px] font-medium'>
+                                        2L
+                                    </li>
+                                    <Image src='/icons/downarrowsvg.svg' alt='' width={12} height={12} className={`mt-[2px] ${isOpenList2 ? 'duration-500 rotate-180' : 'duration-500 rotate-0'}`} />
+                                </div>
                                 <AnimatePresence>
                                     {isOpenList2 && (
                                         <motion.div key="li-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten" style={{ zIndex: -10 }}>
@@ -133,9 +139,12 @@ const Financing = () => {
                                 </AnimatePresence>
                             </motion.div>
                             <motion.div key="financing-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten ml-3">
-                                <li onClick={() => setIsOpenList3(!isOpenList3)} className='text-black cursor-pointer text-[16px] font-medium'>
-                                    Preferred Equity:
-                                </li>
+                                <div className='flex gap-2 items-center cursor-pointer' onClick={() => setIsOpenList3(!isOpenList3)} >
+                                    <li className='text-black text-[16px] font-medium'>
+                                        Preferred Equity:
+                                    </li>
+                                    <Image src='/icons/downarrowsvg.svg' alt='' width={12} height={12} className={`mt-[2px] ${isOpenList3 ? 'duration-500 rotate-180' : 'duration-500 rotate-0'}`} />
+                                </div>
                                 <AnimatePresence>
                                     {isOpenList3 && (
                                         <motion.div key="li-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten" style={{ zIndex: -10 }}>
@@ -174,7 +183,7 @@ const Financing = () => {
                 <AnimatePresence>
                     {isCoinvest && (
                         <motion.div key="li-content" variants={variants} initial="closed" animate="open" exit="closed" className="conten" style={{ zIndex: -10 }}>
-                            <div className='ml-10'>
+                            <div className='ml-5'>
                                 <div>- Active documents:
                                     <span className='text-cyan-600 cursor-pointer'> Credit Agreement</span>,
                                     <span className='text-cyan-600 cursor-pointer'> Intercreditor Agreement</span>
