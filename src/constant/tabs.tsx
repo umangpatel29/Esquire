@@ -1,4 +1,4 @@
-export const ActiveTransactions = [
+export const ActiveTransactionsConstant = [
     {
         id: 1,
         name: 'Project Space',
@@ -13,15 +13,15 @@ export const ActiveTransactions = [
     },
 ];
 
-export const RecentActivity = [
+export const RecentActivityConstant = [
     {
         id: 1,
-        name: 'signed the Project Script EY NRL 19 hours ago',
+        name: 'Signed the Project Script EY NRL 19 hours ago',
     }
 ];
 
 
-export const FormerTransactions = [
+export const FormerTransactionsConstant = [
     {
         id: 1,
         name: 'Project Wonderful',
@@ -60,7 +60,7 @@ export const FormerTransactions = [
     }
 ];
 
-export const ActiveDiligenceTrackers = [
+export const ActiveDiligenceTrackersConstant = [
     {
         id: 1,
         name: 'Project Space',
