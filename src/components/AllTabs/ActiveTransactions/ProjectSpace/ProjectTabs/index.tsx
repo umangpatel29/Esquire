@@ -1,10 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image';
-import Financing from './Financing';
-import PurchaseTable from './StockPurchaseTable';
 
-const ProjectSpace = () => {
+const ProjectTabs = () => {
 
     const tabs = [
         { name: 'NDA - Signed' },
@@ -30,7 +28,7 @@ const ProjectSpace = () => {
                 {
                     tabs.map((item, id) => (
                         <>
-                            <div className={` ${activeTab === id ? 'font-semibold text-black' : 'font-medium text-gray-700'} text-[16px] cursor-pointer`}
+                            <div className={` ${activeTab >= id ? 'font-semibold text-black' : 'font-medium text-gray-700'} text-[16px] cursor-pointer`}
                                 onClick={() => handleActiveTab(id)}
                                 key={id}>{item.name}</div>
                             {
@@ -44,13 +42,9 @@ const ProjectSpace = () => {
                     ))
                 }
             </div>
-            <Financing />
-            <div className='mt-4'>
-                <PurchaseTable />
-            </div>
         </div>
 
     )
 }
 
-export default ProjectSpace
+export default ProjectTabs

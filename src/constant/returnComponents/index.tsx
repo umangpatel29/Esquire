@@ -1,17 +1,42 @@
-import ProjectSpace from "@/components/EsquireComponents/ActiveTransactions/ProjectSpace";
-import ProjectSpot from "@/components/EsquireComponents/ActiveTransactions/ProjectSpot";
-import ProjectStar from "@/components/EsquireComponents/ActiveTransactions/ProjectStar";
 import RecentActivity from "@/components/EsquireComponents/RecentActivity";
 import ActiveDiligenceTrackers from "@/components/EsquireComponents/ActiveDiligenceTrackers";
 import FormerDiligenceTransactions from "@/components/EsquireComponents/FormerDiligenceTransactions";
 import FormerTransactions from "@/components/EsquireComponents/formerTransactions";
-import ActiveTransactions from "@/components/EsquireComponents/ActiveTransactions";
-import DiligenceTrackers from "@/components/EsquireComponents/DiligenceTrackers";
-import InitiateTransaction from "@/components/EsquireComponents/InitiateTransactions";
-import ManageCollaborate from "@/components/EsquireComponents/ManageCollaborators";
-import PortfolioMonitoring from "@/components/EsquireComponents/PortfolioMonitoring";
+import ProjectSpace from "@/components/AllTabs/ActiveTransactions/ProjectSpace";
+import ProjectStar from "@/components/AllTabs/ActiveTransactions/ProjectStar";
+import ProjectSpot from "@/components/AllTabs/ActiveTransactions/ProjectSpot";
+import ActiveTransactions from "@/components/AllTabs/ActiveTransactions";
+import DiligenceTrackers from "@/components/AllTabs/DiligenceTrackers";
+import InitiateTransaction from "@/components/AllTabs/InitiateTransactions";
+import ContactManagement from "@/components/AllTabs/ConteactManagement";
+import PortfolioMonitoring from "@/components/AllTabs/PortfolioMonitoring";
+import TableManagement from "@/components/AllTabs/CapTableManagement";
 
 export const componentMap = [
+    {
+        name: 'tab1',
+        child: <ActiveTransactions />
+    },
+    {
+        name: 'tab2',
+        child: <InitiateTransaction />
+    },
+    {
+        name: 'tab3',
+        child: <PortfolioMonitoring />
+    },
+    {
+        name: 'tab4',
+        child: <ContactManagement />
+    },
+    {
+        name: 'tab5',
+        child: <DiligenceTrackers />
+    },
+    {
+        name: 'tab6',
+        child: <TableManagement />
+    },
     {
         name: 'Recent Activity',
         child: <RecentActivity />,
@@ -40,25 +65,4 @@ export const componentMap = [
         name: 'Former Diligence Transactions',
         child: <FormerDiligenceTransactions />,
     },
-    {
-        name: 'Active Transactions',
-        child: <ActiveTransactions />
-    },
-    {
-        name: 'Diligence Trackers',
-        child: <DiligenceTrackers />
-    },
-    {
-        name: 'Initiate Transaction',
-        child: <InitiateTransaction />
-    },
-    {
-        name: 'Manage Collaborators',
-        child: <ManageCollaborate />
-    },
-    {
-        name: 'Portfolio Monitoring',
-        child: <PortfolioMonitoring />
-    },
-
 ];

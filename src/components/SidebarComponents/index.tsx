@@ -1,23 +1,20 @@
 'use client'
 import React from 'react'
 import { ActiveDiligenceTrackersConstant, ActiveTransactionsConstant, FormerTransactionsConstant, RecentActivityConstant } from '@/constant/tabs';
+import { useTabContext } from '@/context/tabContext';
 
-interface SidebarType {
-    activeTab: string;
-    setActiveTab: (val: string) => void;
-}
+const Sidebar = () => {
 
-const Sidebar = ({ activeTab, setActiveTab }: SidebarType) => {
+    const { activeTab, setActiveTab } = useTabContext()
 
     const handleSidebar = (name: string) => {
         setActiveTab(name)
     }
-
     return (
         <>
             <div className='flex flex-col mt-8 gap-6'>
                 {
-                    activeTab !== 'Diligence Trackers' && <>
+                    activeTab !== 'tab5' && <>
                         <div>
                             <h1 className='text-[15px] font-medium leading-[25px] uppercase'>Recent Activity</h1>
                             {
@@ -59,7 +56,7 @@ const Sidebar = ({ activeTab, setActiveTab }: SidebarType) => {
                 }
 
                 {
-                    activeTab === 'Diligence Trackers' && <>
+                    activeTab === 'tab5' && <>
                         <div>
                             <h1 className='text-[15px] font-medium leading-[25px] uppercase'>Active Diligence Trackers</h1>
                             {
