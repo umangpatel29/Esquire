@@ -25,7 +25,7 @@ const Financing = ({ onchange }: handleonchangeType) => {
                         <Image src='/icons/downarrowsvg.svg' alt='' width={15} height={15} className={`${isOpen ? 'duration-500 rotate-180' : 'duration-500 rotate-0'}`} />
                     </div>
                     {
-                        isOpen && (
+                        !isOpen && (
                             <div className='slide-in'>
                                 <div>
                                     <li className='text-black text-[16px] font-medium'>Active documents:

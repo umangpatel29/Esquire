@@ -1,6 +1,7 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 import Image from 'next/image';
+import { useTabContext } from '../../../../../context/tabContext';
 
 const ProjectTabs = () => {
 
@@ -13,11 +14,21 @@ const ProjectTabs = () => {
         { name: 'Post-Close' },
     ];
 
-    const [activeTab, setActiveTab] = useState(0);
+    const [activeProjectTab, setActiveProjectTab] = useState(0);
 
     const handleActiveTab = (index: number) => {
-        setActiveTab(index);
+        setActiveProjectTab(index);
     };
+
+    const { activeTab } = useTabContext()
+    console.log("🚀 ~ ProjectTabs ~ activeTab:", activeTab)
+
+    useLayoutEffect(() => {
+        if (activeTab === 'Project Space') {
+            setActiveProjectTab(2)
+        }
+    }, [])
+
 
     return (
         <div className=''>
@@ -28,7 +39,7 @@ const ProjectTabs = () => {
                 {
                     tabs.map((item, id) => (
                         <>
-                            <div className={` ${activeTab >= id ? 'font-semibold text-black' : 'font-medium text-gray-700'} text-[16px] cursor-pointer`}
+                            <div className={` ${activeProjectTab >= id ? 'font-semibold text-black' : 'font-medium text-gray-700'} text-[16px] cursor-pointer`}
                                 onClick={() => handleActiveTab(id)}
                                 key={id}>{item.name}</div>
                             {

@@ -9,9 +9,9 @@ interface TabContextProps {
 }
 
 const initialContext: TabContextProps = {
-    activeTab: 'tab1',
+    activeTab: 'tab3',
     setActiveTab: () => { },
-    activeHeader: 'tab1',
+    activeHeader: 'tab3',
     setActiveHeader: () => { },
 };
 

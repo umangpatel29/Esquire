@@ -1,16 +1,16 @@
-import React, { ReactNode, useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import ProjectTabs from './ProjectTabs'
 import Financing from './Financing'
-import Image from 'next/image'
-import { PS_RETURNCOMPONENT } from '@/constant/projectSpaceReturnComponent'
-
+import Image from 'next/image';
+import { PS_RETURNCOMPONENT } from '../../../../constant/projectSpaceReturnComponent';
+import { useTabContext } from '../../../../context/tabContext';
 
 const ProjectSpace = () => {
 
-    const [spaceDocument, setSpaceDocument] = useState('financing')
+    const [spaceDocument, setSpaceDocument] = useState('financing');
 
     return (
-        <div>
+        <div className=''>
             <div className={`h-7`}>
                 <button className={` ${spaceDocument === 'financing' ? 'hidden' : 'slide-in'} text-[14px] font-medium flex gap-1 items-center`} onClick={() => setSpaceDocument('financing')}>
                     <Image src='/icons/downarrowsvg.svg' alt='' width={11} height={11} className='rotate-90' />

@@ -3,6 +3,7 @@ import { useState } from "react";
 import EsquireComponents from "@/components/EsquireComponents";
 import Header from "@/components/Header/Header";
 import Image from "next/image";
+import React from "react";
 import { TabProvider } from "@/context/tabContext";
 
 export default function Home() {
@@ -20,12 +21,11 @@ export default function Home() {
         </div>
 
 
-
         <div className='fixed flex items-end gap-2 right-10 bottom-10'>
           {isChatOpen && (
             <div className="h-[450px] bg-white w-[300px] relative border-2 rounded-xl">
               <div className="absolute top-0 bg-cyan-800 rounded-t-lg text-white font-semibold border-b-2 text-center py-2 w-full">
-                Chat Box
+                Ask Esquire
               </div>
               <div className="border-t-2 px-2 py-1 flex gap-3 items-center absolute bottom-0 right-0 w-full rounded">
                 <div className="h-8 w-10 flex justify-center items-center rounded-full overflow-hidden border-2">

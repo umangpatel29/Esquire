@@ -1,4 +1,5 @@
-import PurchaseTable from "@/components/AllTabs/ActiveTransactions/ProjectSpace/SpacePurchaseTable";
+import React from "react"
+import PurchaseTable from "../../components/AllTabs/ActiveTransactions/ProjectSpace/SpacePurchaseTable"
 
 
 type returnType = {

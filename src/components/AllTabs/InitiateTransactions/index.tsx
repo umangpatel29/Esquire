@@ -5,7 +5,7 @@ const InitiateTransaction = () => {
     <div className='flex flex-col gap-3'>
       <div>
         <div className='text-xl font-semibold '>
-          Existing PortCo?
+          Existing PortCo
         </div>
         <div>
           <li>New Add-On Acquisition</li>
@@ -24,7 +24,7 @@ const InitiateTransaction = () => {
       </div>
       <div>
         <div className='text-xl font-semibold '>
-          New Investment Opportunity?
+          New Investment Opportunity
         </div>
         <div>
           <li>Private Company LBO</li>

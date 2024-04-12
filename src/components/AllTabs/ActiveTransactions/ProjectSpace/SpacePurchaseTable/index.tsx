@@ -1,9 +1,11 @@
 'use client'
 import Image from 'next/image';
 import React, { useState } from 'react'
+import ProjectspacePDF from '../../../../Modals/projectspacePDF';
 
 const PurchaseTable = () => {
     const [isOpenTable, setISopenTable] = useState(false)
+    const [isPdfOpen, setIsPdfOpen] = useState(false)
 
     const headers = ['Version', 'Version Type', 'Date Uploaded', 'Document', 'Relavennt Support'];
     const data = [
@@ -26,7 +28,7 @@ const PurchaseTable = () => {
                 <p className='text-cyan-600 font-medium'>See Previous Prompts and comparisons</p>
             </div>
             {
-                isOpenTable &&
+                !isOpenTable &&
                 <table className='w-full slide-in'>
                     <thead>
                         <tr className='border'>
@@ -43,8 +45,31 @@ const PurchaseTable = () => {
                                 <td className='text-start border p-2'>{row[2]}</td>
                                 <td className='text-start border p-2'>{row[3] && <>
                                     <div className='flex gap-5 items-center'>
-                                        <Image src={row[3]} alt="Icon" width="23" height="23" className='cursor-pointer' />
-                                        <Image src={row[4]} alt="Icon" width="20" height="20" className='cursor-pointer' />
+                                        <Image
+                                            src={row[3]}
+                                            alt="Icon"
+                                            width="23"
+                                            height="23"
+                                            className='cursor-pointer'
+                                            onClick={() => {
+                                                if (index === 4) {
+                                                    setIsPdfOpen(!isPdfOpen);
+                                                }
+                                            }}
+                                        />
+                                        <Image
+                                            src={row[4]}
+                                            alt="Icon"
+                                            width="20"
+                                            height="20"
+                                            className='cursor-pointer'
+                                            onClick={() => {
+                                                if (index === 4) {
+                                                    setIsPdfOpen(!isPdfOpen);
+                                                }
+                                            }}
+                                        />
+
                                         <span className='text-red-500 text-[12px] ml-2 font-medium'>{row[6]}</span>
                                     </div>
                                 </>
@@ -56,6 +81,13 @@ const PurchaseTable = () => {
                     </tbody>
                 </table>
             }
+
+            {
+                isPdfOpen &&
+                <ProjectspacePDF filePath='/Husky.pdf' isPdfOpen={isPdfOpen} setIsPdfOpen={() => setIsPdfOpen(false)} />
+            }
+
+
         </div >
     )
 }

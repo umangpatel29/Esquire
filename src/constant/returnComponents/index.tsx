@@ -1,16 +1,17 @@
-import RecentActivity from "@/components/EsquireComponents/RecentActivity";
-import ActiveDiligenceTrackers from "@/components/EsquireComponents/ActiveDiligenceTrackers";
-import FormerDiligenceTransactions from "@/components/EsquireComponents/FormerDiligenceTransactions";
-import FormerTransactions from "@/components/EsquireComponents/formerTransactions";
-import ProjectSpace from "@/components/AllTabs/ActiveTransactions/ProjectSpace";
-import ProjectStar from "@/components/AllTabs/ActiveTransactions/ProjectStar";
-import ProjectSpot from "@/components/AllTabs/ActiveTransactions/ProjectSpot";
 import ActiveTransactions from "@/components/AllTabs/ActiveTransactions";
+import ProjectSpace from "@/components/AllTabs/ActiveTransactions/ProjectSpace";
+import ProjectSpot from "@/components/AllTabs/ActiveTransactions/ProjectSpot";
+import ProjectStar from "@/components/AllTabs/ActiveTransactions/ProjectStar";
+import TableManagement from "@/components/AllTabs/CapTableManagement";
+import ContractManagement from "@/components/AllTabs/ContractManagement";
 import DiligenceTrackers from "@/components/AllTabs/DiligenceTrackers";
 import InitiateTransaction from "@/components/AllTabs/InitiateTransactions";
-import ContactManagement from "@/components/AllTabs/ConteactManagement";
 import PortfolioMonitoring from "@/components/AllTabs/PortfolioMonitoring";
-import TableManagement from "@/components/AllTabs/CapTableManagement";
+import ActiveDiligenceTrackers from "@/components/EsquireComponents/ActiveDiligenceTrackers";
+import FormerDiligenceTransactions from "@/components/EsquireComponents/FormerDiligenceTransactions";
+import RecentActivity from "@/components/EsquireComponents/RecentActivity";
+import FormerTransactions from "@/components/EsquireComponents/formerTransactions";
+import React from "react";
 
 export const componentMap = [
     {
@@ -27,7 +28,7 @@ export const componentMap = [
     },
     {
         name: 'tab4',
-        child: <ContactManagement />
+        child: <ContractManagement />
     },
     {
         name: 'tab5',

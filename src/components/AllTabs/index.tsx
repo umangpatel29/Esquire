@@ -1,5 +1,5 @@
 'use client'
-import { useTabContext } from '@/context/tabContext';
+import { useTabContext } from '../../context/tabContext';
 import React from 'react'
 
 const tabs = [
@@ -12,16 +12,16 @@ const tabs = [
         name: 'Initiate Transaction',
     },
     {
+        link: 'tab5',
+        name: 'Diligence Trackers',
+    },
+    {
         link: 'tab3',
         name: 'Portfolio Monitoring and Marks',
     },
     {
         link: 'tab4',
         name: 'PortCo Contract Management',
-    },
-    {
-        link: 'tab5',
-        name: 'Diligence Trackers',
     },
     {
         link: 'tab6',
@@ -48,7 +48,7 @@ const AllTabs = () => {
             {
                 tabs.map((item, id) => (
                     <>
-                        <div className={` ${activeHeader === item.link ? 'font-bold text-black' : 'font-medium text-gray-700'} text-[14px]  cursor-pointer`}
+                        <div className={` ${activeHeader === item.link ? 'font-bold text-black' : 'font-medium text-gray-700'} text-[14px] cursor-pointer`}
                             onClick={() => handleActiveTab(item.link)}
                             key={id}>{item.name}</div>
                         {

@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import AllTabs from '../AllTabs';
 import Sidebar from '../SidebarComponents';
 import TabsCildrenComponents from '../TabsCildrenComponents';
-import { componentMap } from '@/constant/returnComponents';
-import { useTabContext } from '@/context/tabContext';
+import { useTabContext } from '../../context/tabContext';
+import { componentMap } from '../../constant/returnComponents';
 
 const EsquireComponents = () => {
     const [activeComponent, setActiveComponent] = useState<React.ReactNode>(null);
@@ -27,7 +27,7 @@ const EsquireComponents = () => {
                 <div className='w-[300px] sticky left-0'>
                     <Sidebar />
                 </div>
-                <div className='border-l p-8 w-full'>
+                <div className='border-l p-8 w-[calc(100%-300px)]'>
                     <TabsCildrenComponents>
                         {activeComponent}
                     </TabsCildrenComponents>
