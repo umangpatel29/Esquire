@@ -20,10 +20,10 @@ const CaptaTable = () => {
                 <div>
                     <table>
                         <tr className='border bg-gray-100 p-3 border-gray-300'>
-                            <td className='p-2 border border-gray-300'>Security</td>
-                            <td className='p-2 border border-gray-300'>Transaction</td>
-                            <td className='p-2 border border-gray-300'>Date</td>
-                            <td className='p-2 border border-gray-300'>Quantity</td>
+                            <th className='p-2 border border-gray-300'>Security</th>
+                            <th className='p-2 border border-gray-300'>Transaction</th>
+                            <th className='p-2 border border-gray-300'>Date</th>
+                            <th className='p-2 border border-gray-300'>Quantity</th>
                         </tr>
                         <tr>
                             <td className='p-2 border border-gray-300'>ES-232</td>
