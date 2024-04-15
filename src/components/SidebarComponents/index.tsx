@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { ActiveDiligenceTrackersConstant, ActiveTransactionsConstant, CapTableManagementConstant, FormerTransactionsConstant, RecentActivityConstant } from '@/constant/tabs';
+import { ActiveDiligenceTrackersConstant, ActiveTransactionsConstant, CapTableManagementConstant, FormerDeligenceTrackerConstant, FormerTransactionsConstant, RecentActivityConstant } from '@/constant/tabs';
 import { useTabContext } from '@/context/tabContext';
 import Image from 'next/image';
 
@@ -77,9 +77,9 @@ const Sidebar = () => {
                             }
                         </div>
                         <div>
-                            <h1 className='text-[15px] font-medium leading-[25px] uppercase'>Former Diligence Transactions</h1>
+                            <h1 className='text-[15px] font-medium leading-[25px] uppercase'>Former Diligence Trackers</h1>
                             {
-                                FormerTransactionsConstant.map((item, id) => (
+                                FormerDeligenceTrackerConstant.map((item, id) => (
                                     <div key={id}>
                                         <div className='flex gap-3 mt-2 items-center'>
                                             <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>

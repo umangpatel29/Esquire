@@ -59,12 +59,51 @@ export const FormerTransactionsConstant = [
         name: 'Project Wagging',
     }
 ];
+export const FormerDeligenceTrackerConstant = [
+    {
+        id: 1,
+        name: 'Project Wonderful',
+    },
+    {
+        id: 2,
+        name: 'Project Whimsical',
+    },
+    {
+        id: 3,
+        name: 'Project Waterfall',
+    },
+    {
+        id: 4,
+        name: 'Project Whale',
+    },
+    {
+        id: 5,
+        name: 'Project Water',
+    },
+    {
+        id: 6,
+        name: 'Project Write',
+    },
+    {
+        id: 7,
+        name: 'Project Wall',
+    },
+    {
+        id: 8,
+        name: 'Project Whammy',
+    }
+];
 
 export const ActiveDiligenceTrackersConstant = [
     {
         id: 1,
         name: 'Project Space',
         link: 'Diligence Project Space'
+    },
+    {
+        id: 1,
+        name: 'Project spot',
+        link: 'Diligence Project spot'
     },
     {
         id: 2,
