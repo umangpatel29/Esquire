@@ -27,8 +27,8 @@ const Sidebar = () => {
                             {
                                 RecentActivityConstant.map((item, id) => (
                                     <div key={id}>
-                                        <div className='flex gap-3 mt-3 items-center'>
-                                            <li onClick={() => handleSidebar('Recent Activity')} className={`${activeTab === 'Recent Activity' ? 'font-semibold' : ' font-normal'} ml-2 text-sm text-black cursor-pointer`}>{item.name}</li>
+                                        <div className='flex gap-3 mt-2 items-center'>
+                                            <li onClick={() => handleSidebar('Recent Activity')} className={`${activeTab === 'Recent Activity' ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
                                         </div>
                                     </div>
                                 ))
@@ -40,8 +40,8 @@ const Sidebar = () => {
                             {
                                 ActiveTransactionsConstant.map((item, id) => (
                                     <div key={id}>
-                                        <div className='flex gap-3 mt-3 items-center'>
-                                            <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-2 text-sm text-black cursor-pointer`}>{item.name}</li>
+                                        <div className='flex gap-3 mt-2 items-center'>
+                                            <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
                                         </div>
                                     </div>
                                 ))
@@ -52,8 +52,8 @@ const Sidebar = () => {
                             {
                                 FormerTransactionsConstant.map((item, id) => (
                                     <div key={id}>
-                                        <div className='flex gap-3 mt-3 items-center'>
-                                            <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-2 text-sm text-black cursor-pointer`}>{item.name}</li>
+                                        <div className='flex gap-3 mt-2 items-center'>
+                                            <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
                                         </div>
                                     </div>
                                 ))
@@ -69,8 +69,8 @@ const Sidebar = () => {
                             {
                                 ActiveDiligenceTrackersConstant.map((item, id) => (
                                     <div key={id}>
-                                        <div className='flex gap-3 mt-3 items-center'>
-                                            <li onClick={() => handleSidebar(item.link)} className={`${activeTab === item.link ? 'font-semibold' : ' font-normal'} ml-2 text-sm text-black cursor-pointer`}>{item.name}</li>
+                                        <div className='flex gap-3 mt-2 items-center'>
+                                            <li onClick={() => handleSidebar(item.link)} className={`${activeTab === item.link ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
                                         </div>
                                     </div>
                                 ))
@@ -81,8 +81,8 @@ const Sidebar = () => {
                             {
                                 FormerTransactionsConstant.map((item, id) => (
                                     <div key={id}>
-                                        <div className='flex gap-3 mt-3 items-center'>
-                                            <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-2 text-sm text-black cursor-pointer`}>{item.name}</li>
+                                        <div className='flex gap-3 mt-2 items-center'>
+                                            <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
                                         </div>
                                     </div>
                                 ))
@@ -99,11 +99,11 @@ const Sidebar = () => {
                             {
                                 CapTableManagementConstant.map((item, index) => (
                                     <div key={index} >
-                                        <div className='flex gap-3 mt-3 items-center'>
+                                        <div className='flex gap-3 mt-2 items-center'>
                                             <li
                                                 onMouseEnter={() => setActiveHover(index)}
                                                 onClick={() => handleSidebar(item.name)}
-                                                className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-2 text-sm  duration-300 hover:font-semibold text-black cursor-pointer`}
+                                                className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-4 text-sm  duration-300 hover:font-semibold text-black cursor-pointer`}
                                             >
                                                 {item.name}
                                             </li>
