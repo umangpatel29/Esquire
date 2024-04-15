@@ -24,10 +24,10 @@ const EsquireComponents = () => {
                 </div>
             </div>
             <div className='flex border-t container mx-auto gap-2 z-10'>
-                <div className='w-[300px] sticky left-0'>
+                <div className='w-[250px] sticky left-0'>
                     <Sidebar />
                 </div>
-                <div className='border-l mb-10 p-8 w-[calc(100%-300px)]'>
+                <div className='border-l mb-10 p-8 w-[calc(100%-250px)]'>
                     <TabsCildrenComponents>
                         {activeComponent}
                     </TabsCildrenComponents>
