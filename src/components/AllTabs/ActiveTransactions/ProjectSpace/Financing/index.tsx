@@ -63,7 +63,7 @@ const Financing = ({ onchange }: handleonchangeType) => {
                                                         <ul style={{ listStyleType: 'circle' }} className=''>
                                                             <li className='text-black text-[16px]'>{item.name}
                                                                 {item.value.map((value, id) => (
-                                                                    <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                                                    <span key={id} className='text-cyan-600 cursor-pointer font-medium'> {value}</span>
                                                                 ))}
                                                             </li>
                                                         </ul>
