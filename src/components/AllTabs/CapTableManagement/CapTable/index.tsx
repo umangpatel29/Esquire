@@ -20,10 +20,10 @@ const CaptaTable = () => {
                 <div>
                     <table>
                         <tr className='border bg-gray-100 p-3 border-gray-300'>
-                            <th className='p-2 border border-gray-300'>Security</th>
-                            <th className='p-2 border border-gray-300'>Transaction</th>
-                            <th className='p-2 border border-gray-300'>Date</th>
-                            <th className='p-2 border border-gray-300'>Quantity</th>
+                            <td className='p-2 font-semibold border border-gray-300'>Security</td>
+                            <td className='p-2 font-semibold border border-gray-300'>Transaction</td>
+                            <td className='p-2 font-semibold border border-gray-300'>Date</td>
+                            <td className='p-2 font-semibold border border-gray-300'>Quantity</td>
                         </tr>
                         <tr>
                             <td className='p-2 border border-gray-300'>ES-232</td>
@@ -59,7 +59,7 @@ const CaptaTable = () => {
                             </tr>
                             <tr className='border bg-gray-100'>
                                 {headers2.map((header, index) => (
-                                    <th key={index} className='border px-3 py-2 border-gray-300'>{header}</th>
+                                    <td key={index} className='border px-3 py-2 font-semibold border-gray-300'>{header}</td>
                                 ))}
                             </tr>
                         </thead>
