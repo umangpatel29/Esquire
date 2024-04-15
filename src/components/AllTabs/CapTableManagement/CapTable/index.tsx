@@ -19,29 +19,29 @@ const CaptaTable = () => {
                 <div className='my-3 font-medium text-[20px] underline'>Most Recent Transactions :</div>
                 <div>
                     <table>
-                        <tr className='bg-gray-100'>
-                            <td className='p-2 border'>Security</td>
-                            <td className='p-2 border'>Transaction</td>
-                            <td className='p-2 border'>Date</td>
-                            <td className='p-2 border'>Quantity</td>
+                        <tr className='border bg-gray-100 p-3 border-gray-300'>
+                            <td className='p-2 border border-gray-300'>Security</td>
+                            <td className='p-2 border border-gray-300'>Transaction</td>
+                            <td className='p-2 border border-gray-300'>Date</td>
+                            <td className='p-2 border border-gray-300'>Quantity</td>
                         </tr>
                         <tr>
-                            <td className='p-2 border'>ES-232</td>
-                            <td className='p-2 border'>Issued</td>
-                            <td className='p-2 border'>4/1/2024</td>
-                            <td className='p-2 border'>100</td>
+                            <td className='p-2 border border-gray-300'>ES-232</td>
+                            <td className='p-2 border border-gray-300'>Issued</td>
+                            <td className='p-2 border border-gray-300'>4/1/2024</td>
+                            <td className='p-2 border border-gray-300'>100</td>
                         </tr>
                         <tr>
-                            <td className='p-2 border'>ES-233</td>
-                            <td className='p-2 border'>Issued</td>
-                            <td className='p-2 border'>4/1/2024</td>
-                            <td className='p-2 border'>100</td>
+                            <td className='p-2 border border-gray-300'>ES-233</td>
+                            <td className='p-2 border border-gray-300'>Issued</td>
+                            <td className='p-2 border border-gray-300'>4/1/2024</td>
+                            <td className='p-2 border border-gray-300'>100</td>
                         </tr>
                         <tr>
-                            <td className='p-2 border'>ES-234</td>
-                            <td className='p-2 border'>Issued</td>
-                            <td className='p-2 border'>4/1/2024</td>
-                            <td className='p-2 border'>100</td>
+                            <td className='p-2 border border-gray-300'>ES-234</td>
+                            <td className='p-2 border border-gray-300'>Issued</td>
+                            <td className='p-2 border border-gray-300'>4/1/2024</td>
+                            <td className='p-2 border border-gray-300'>100</td>
                         </tr>
                     </table>
                 </div>
