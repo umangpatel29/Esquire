@@ -95,7 +95,7 @@ const Sidebar = () => {
                     activeHeader === 'tab6' &&
                     <>
                         <div className='relative'>
-                            <h1 className='text-[15px] font-medium leading-[25px] uppercase'>Active Diligence Trackers</h1>
+                            <h1 className='text-[15px] font-medium leading-[25px] uppercase'>My PortCos</h1>
                             {
                                 CapTableManagementConstant.map((item, index) => (
                                     <div key={index} >
