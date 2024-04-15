@@ -15,6 +15,14 @@ const CaptaTable = () => {
     ];
     return (
         <div className='flex flex-col gap-5'>
+            <div className='flex justify-between'>
+                <div className='font-semibold text-[25px] text-cyan-600'>The HVAC Company</div>
+                <div className='flex gap-5'>
+                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium'>Employment Agreements</div>
+                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium'>issue Units</div>
+                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium'>Export to Excel</div>
+                </div>
+            </div>
             <div>
                 <div className='mb-3 font-medium text-[20px] underline'>Most Recent Transactions :</div>
                 <div>
