@@ -85,7 +85,7 @@ const FinanicingProcess = () => {
                                 <Image src='/icons/downarrowsvg.svg' alt='' width={12} height={12} className={`mt-[2px] ${isOpenList ? 'duration-500 rotate-180' : 'duration-500 rotate-0'}`} />
                             </div>
                             {isOpenList && (
-                                <div className='ml-16 slide-in'>
+                                <div className='ml-16 slide-in font-medium'>
                                     <ul style={{ listStyleType: 'square' }} className=''>
                                         <li>Active documents:
                                             <span className='text-cyan-600 cursor-pointer'> Credit Agreement</span>,
