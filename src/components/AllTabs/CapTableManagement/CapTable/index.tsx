@@ -16,7 +16,7 @@ const CaptaTable = () => {
     return (
         <div className='flex flex-col gap-5'>
             <div>
-                <div className='my-3 font-medium text-[20px] underline'>Most Recent Transactions</div>
+                <div className='my-3 font-medium text-[20px] underline'>Most Recent Transactions :</div>
                 <div>
                     <table>
                         <tr className='bg-gray-100'>
@@ -47,7 +47,7 @@ const CaptaTable = () => {
                 </div>
             </div>
             <div>
-                <div className='font-medium text-[20px] underline my-3'>Cap Table Summary</div>
+                <div className='font-medium text-[20px] underline my-3'>Cap Table Summary :</div>
                 <div>
                     <table>
                         <thead>
