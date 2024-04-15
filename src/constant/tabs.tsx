@@ -64,9 +64,30 @@ export const ActiveDiligenceTrackersConstant = [
     {
         id: 1,
         name: 'Project Space',
+        link: 'Diligence Project Space'
     },
     {
         id: 2,
         name: 'Project Star',
+        link: 'Diligence Project Star'
+    },
+]
+
+export const CapTableManagementConstant = [
+    {
+        id: 1,
+        name: 'The HVAC Company'
+    },
+    {
+        id: 2,
+        name: 'The Rocket Company'
+    },
+    {
+        id: 3,
+        name: 'The Computer Company'
+    },
+    {
+        id: 4,
+        name: 'Dental Rentals'
     },
 ]

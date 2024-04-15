@@ -3,7 +3,6 @@ import ProjectTabs from './ProjectTabs'
 import Financing from './Financing'
 import Image from 'next/image';
 import { PS_RETURNCOMPONENT } from '../../../../constant/projectSpaceReturnComponent';
-import { useTabContext } from '../../../../context/tabContext';
 
 const ProjectSpace = () => {
 

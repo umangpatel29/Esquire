@@ -27,7 +27,7 @@ const EsquireComponents = () => {
                 <div className='w-[300px] sticky left-0'>
                     <Sidebar />
                 </div>
-                <div className='border-l p-8 w-[calc(100%-300px)]'>
+                <div className='border-l mb-10 p-8 w-[calc(100%-300px)]'>
                     <TabsCildrenComponents>
                         {activeComponent}
                     </TabsCildrenComponents>

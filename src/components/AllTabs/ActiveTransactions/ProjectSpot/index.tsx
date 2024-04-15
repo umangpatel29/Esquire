@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Image from 'next/image';
 
 const ProjectSpot = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div>

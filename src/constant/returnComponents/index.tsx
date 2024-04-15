@@ -5,6 +5,7 @@ import ProjectStar from "@/components/AllTabs/ActiveTransactions/ProjectStar";
 import TableManagement from "@/components/AllTabs/CapTableManagement";
 import ContractManagement from "@/components/AllTabs/ContractManagement";
 import DiligenceTrackers from "@/components/AllTabs/DiligenceTrackers";
+import DeligenceProjectSpace from "@/components/AllTabs/DiligenceTrackers/projectSpace";
 import InitiateTransaction from "@/components/AllTabs/InitiateTransactions";
 import PortfolioMonitoring from "@/components/AllTabs/PortfolioMonitoring";
 import ActiveDiligenceTrackers from "@/components/EsquireComponents/ActiveDiligenceTrackers";
@@ -66,4 +67,8 @@ export const componentMap = [
         name: 'Former Diligence Transactions',
         child: <FormerDiligenceTransactions />,
     },
+    {
+        name: 'Diligence Project Space',
+        child: <DeligenceProjectSpace />
+    }
 ];

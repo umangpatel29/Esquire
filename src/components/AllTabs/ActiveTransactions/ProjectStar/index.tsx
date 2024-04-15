@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const ProjectStar = () => {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div>

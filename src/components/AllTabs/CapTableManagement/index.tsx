@@ -1,8 +1,11 @@
 import React from 'react'
+import CaptaTable from './CapTable'
 
 const TableManagement = () => {
     return (
-        <div>TableManagement paeg</div>
+        <div>
+            <CaptaTable />
+        </div>
     )
 }
 

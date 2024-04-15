@@ -1,9 +1,10 @@
 import React from 'react'
+import DeligensLendingPage from './lendingpage'
 
 const DiligenceTrackers = () => {
     return (
         <div>
-            DiligenceTrackers page
+            <DeligensLendingPage />
         </div>
     )
 }

@@ -17,7 +17,7 @@ const Header = () => {
                 />
             </div>
             <div className='flex gap-5 items-center'>
-                <p className='cursor-pointer font-medium'>Welocme Shophia</p> |
+                <p className='cursor-pointer font-medium'>Welcome Sophia</p> |
                 <Link href='help' className='cursor-pointer font-medium'>Help</Link> |
                 <button className='border rounded-md text-black cursor-pointer font-medium px-4 py-2 bg-slate-100'>Log Out</button>
             </div>
