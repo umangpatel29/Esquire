@@ -51,7 +51,7 @@ const ChatBox = () => {
                                         message.isPdfLink &&
 
                                         <a href={pdfUrl} download className='bg-red-700 rounded-md p-3 my-2 flex justify-between items-center text-white font-medium'>
-                                            <span>Esquire.xlsx</span> <Image src='/icons/up-arrow.svg' className='rotate-180' height={25} width={25} alt='' />
+                                            <span>Esquire.pdf</span> <Image src='/icons/up-arrow.svg' className='rotate-180' height={25} width={25} alt='' />
                                         </a>
                                     }
                                 </span>
