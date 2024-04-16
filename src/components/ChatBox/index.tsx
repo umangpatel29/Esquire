@@ -34,7 +34,7 @@ const ChatBox = () => {
                         Ask Esquire
                     </div>
 
-                    <div className="h-[368px] overflow-y-scroll bg-gray-50 px-4 py-2">
+                    <div className="h-[368px] overflow-y-auto bg-gray-50 px-4 py-2">
 
                         {messages.length > 1 && messages.map((message, index) => (
                             <div
