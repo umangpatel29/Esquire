@@ -12,8 +12,18 @@ const ChatBox = () => {
         setMessages((prevMessages) => [
             ...prevMessages,
             { text: input, isUser: true },
-            { text: response, isUser: false, isPdfLink: true },
+            { text: 'Loading..', isUser: false, isPdfLink: false },
         ]);
+
+        setTimeout(() => {
+            setMessages((prevMessages) => {
+                const updatedMessages = prevMessages.slice(0, -1);
+                return [
+                    ...updatedMessages,
+                    { text: response, isUser: false, isPdfLink: true },
+                ];
+            });
+        }, 2000);
     };
 
     return (
