@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-const response = 'Sure, see attached. Let me know if you have any follow-up questions. (Note to Mitul - I have sent you a project space attachment in email, please add that in the response)';
+const response = 'Sure, see attached. Let me know if you have any follow-up questions.';
 const pdfUrl = '/chatbox.pdf';
 
 const ChatBox = () => {
