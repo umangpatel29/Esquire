@@ -50,7 +50,7 @@ const PdfModal: React.FC<PdfModalProps> = ({ setIsRedlinePdf, isRedlinePdf }) =>
                 isOpen={isRedlinePdf}
                 onRequestClose={handleCloseModal}
                 overlayClassName='fixed inset-0 z-40 bg-gray-800 bg-opacity-75 flex justify-center items-center'
-                className='bg-white p-5 rounded-lg outline-none w-[60%] h-[70%]'
+                className='bg-white px-5 pb-2 pt-5 rounded-lg outline-none w-[70%] h-[95%]'
             >
                 <div className='relative'>
                     <Image onClick={() => setIsRedlinePdf()} src='/icons/crossmodal.svg' alt='' width={20} height={20} className="absolute cursor-pointer -top-5 -right-2 m-4 text-white hover:text-gray-800" />

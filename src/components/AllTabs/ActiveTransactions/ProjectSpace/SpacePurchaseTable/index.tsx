@@ -49,7 +49,7 @@ const PurchaseTable = () => {
             </div>
             {
                 !isOpenTable &&
-                <div className='flex items-end'>
+                <div className='flex items-end relative'>
                     <table className='w-full slide-in'>
                         <thead>
                             <tr className='border'>
@@ -107,8 +107,8 @@ const PurchaseTable = () => {
                             ))}
                         </tbody>
                     </table>
-                    <button onClick={() => setShowColumn(!showColumn)} className='ml-2'>
-                        <Image src='/icons/eye.svg' width={20} height={20} alt='' />
+                    <button onClick={() => setShowColumn(!showColumn)} className='ml-2 absolute top-[208px] -right-7'>
+                        <Image src='/icons/magicstick.png' width={20} height={20} alt='' />
                     </button>
                 </div>
             }
