@@ -6,7 +6,6 @@ import Image from "next/image";
 import React from "react";
 import { TabProvider } from "@/context/tabContext";
 import ChatBox from "@/components/ChatBox";
-import ChatBoxDemo from "@/components/ChatBox/demo";
 
 export default function Home() {
 
@@ -23,10 +22,8 @@ export default function Home() {
         </div>
 
 
-          <ChatBox />
-        {/* <div className="w-[500px] h-[600px] border">
-          <ChatBoxDemo />
-        </div> */}
+        <ChatBox />
+
       </div>
     </TabProvider>
 

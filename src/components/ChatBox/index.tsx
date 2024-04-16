@@ -12,7 +12,7 @@ const ChatBox = () => {
         setMessages((prevMessages) => [
             ...prevMessages,
             { text: input, isUser: true },
-            { text: 'Loading..', isUser: false, isPdfLink: false },
+            { text: 'typing..', isUser: false, isPdfLink: false },
         ]);
 
         setTimeout(() => {
