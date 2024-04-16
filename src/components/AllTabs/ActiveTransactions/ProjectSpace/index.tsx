@@ -3,6 +3,7 @@ import ProjectTabs from './ProjectTabs'
 import Financing from './Financing'
 import Image from 'next/image';
 import { PS_RETURNCOMPONENT } from '../../../../constant/projectSpaceReturnComponent';
+import PromptBar from './Promptbar';
 
 const ProjectSpace = () => {
 
@@ -17,6 +18,7 @@ const ProjectSpace = () => {
                 </button>
             </div>
             <ProjectTabs />
+            <PromptBar />
             <div className='mt-2'>
                 {
                     spaceDocument === 'financing' && (

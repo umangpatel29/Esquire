@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CaptaTable = () => {
-    const headers1 = ['', 'Common Shares', 'Management Incentive Units-Class A', 'Management Incentive Units-Class B'];
     const headers2 = ['Holders & Interests', 'Outstanding Quantity', 'Outstanding %', 'Outstanding Quantity', 'Outstanding %', 'Outstanding Quantity', 'Outstanding %'];
 
     const tableData = [
@@ -13,14 +12,15 @@ const CaptaTable = () => {
         ['All Units Remainig', '--', '--%', '100', '20%', '200', '20%'],
         ['All Units Total', '20,000,000', '100%', '500', '100%', '1000', '100%']
     ];
+    
     return (
         <div className='flex flex-col gap-5'>
             <div className='flex justify-between'>
                 <div className='font-semibold text-[25px] text-cyan-600'>The HVAC Company</div>
                 <div className='flex gap-5'>
-                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium'>Employment Agreements</div>
-                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium'>issue Units</div>
-                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium'>Export to Excel</div>
+                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium hover:underline'>Employment Agreements</div>
+                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium hover:underline'>issue Units</div>
+                    <div className='text-cyan-600 tracking-tight cursor-pointer font-medium hover:underline'>Export to Excel</div>
                 </div>
             </div>
             <div>

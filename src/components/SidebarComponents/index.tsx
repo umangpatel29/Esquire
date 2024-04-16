@@ -108,7 +108,6 @@ const Sidebar = () => {
                                                 {item.name}
                                             </li>
                                         </div>
-
                                     </div>
                                 ))
                             }
