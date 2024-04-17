@@ -44,7 +44,7 @@ const AllTabs = () => {
     };
 
     return (
-        <div className='flex gap-3 my-8 items-center'>
+        <div className='flex gap-3 my-6 items-center'>
             {
                 tabs.map((item, id) => (
                     <>
