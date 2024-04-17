@@ -10,15 +10,14 @@ function MonitoringTable() {
         ['Total', '$21,906', '$102,000', '$30,600', '$29,070', '$30,524', '(4.1%)', '$229,500', '$227,237', '2.25x', '23%', '$49,265', '$49,289 ', '$47,025 ', '$2,264 ', '1.70x', '0.08x'],
     ];
 
-    const customClass = 'text-center border underline px-7 py-2';
-    const netDebtClass = ''
+    const customClass = 'text-center border font-medium text-[16px] underline px-7 py-2';
 
     return (
         <div className="overflow-x-auto">
-            <table className="w-full  py-2">
+            <table className="w-full">
                 <thead>
                     <tr className='border-b-2 w-full'>
-                        <th className={customClass} colSpan={6} style={{ paddingTop: '20px', paddingBottom: '10px' }}>Key LTM Financials</th>
+                        <th className={customClass} colSpan={6} style={{ paddingTop: '15px', paddingBottom: '10px' }}>Key LTM Financials</th>
                         <th className={customClass} colSpan={7}>Valuation</th>
                         <th className={customClass} colSpan={5}>Credit Metrics</th>
                     </tr>
@@ -36,15 +35,13 @@ function MonitoringTable() {
                             {row.map((cell, cellIndex) => (
                                 <td
                                     key={cellIndex}
-                                    className={`px-5 py-3 border 
-                                        ${rowIndex === 4 ? 'font-semibold bg-gray-100' : ''} 
+                                    className={`px-5 py-3 border text-[14px]
+                                        ${rowIndex === 4 ? 'font-medium text-[15px] bg-gray-100' : ''} 
                                         ${rowIndex === 0 && cellIndex === 14 ? 'text-red-500' : ''}
                                         ${rowIndex === 3 && cellIndex === 14 ? 'text-red-500' : ''}
                                         ${rowIndex === 1 && cellIndex === 7 ? 'bg-yellow-50 text-end' : 'text-end'}
-                                        ${rowIndex === 3 && cellIndex === 7 ? 'bg-[#f7beb0af] m-40 text-end' : 'text-end'}
-                                        ${cellIndex === 0 ? 'm-40 text-center' : ''}
+                                        ${rowIndex === 3 && cellIndex === 7 ? 'bg-[#f7beb0af] text-end' : 'text-end'}
                                     `}
-                                // colSpan={cellIndex === 0 ? 2 : 1}
                                 >
                                     {cell}
                                 </td>

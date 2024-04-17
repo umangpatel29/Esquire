@@ -1,11 +1,11 @@
 export const ActiveTransactionsConstant = [
     {
-        id: 1,
-        name: 'Project Space',
-    },
-    {
         id: 2,
         name: 'Project Spot',
+    },
+    {
+        id: 1,
+        name: 'Project Space',
     },
     {
         id: 3,
@@ -18,6 +18,25 @@ export const RecentActivityConstant = [
         id: 1,
         name: 'Signed the Project Script EY NRL 19 hours ago',
     }
+];
+
+export const MyPortCosConstant = [
+    {
+        id: 1,
+        name: 'The Rocket Company',
+    },
+    {
+        id: 2,
+        name: 'The HVAC Company',
+    },
+    {
+        id: 3,
+        name: 'The Computer Company',
+    },
+    {
+        id: 4,
+        name: 'Dental Rentals',
+    },
 ];
 
 

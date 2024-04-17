@@ -9,18 +9,18 @@ interface PdfModalProps {
 }
 
 const pdfUrl = '/redline.pdf';
-const pages = [0, 4, 30, 33, 50, 70]; // Array of page numbers
+const pages = [0, 4, 30, 33, 50, 70];
 
 const PdfModal: React.FC<PdfModalProps> = ({ setIsRedlinePdf, isRedlinePdf }) => {
     const [currentPageIndex, setCurrentPageIndex] = useState(0);
     const iframeRef = useRef<HTMLIFrameElement>(null);
 
-    // Handle potential null reference in useEffect
+
     useEffect(() => {
         if (iframeRef.current) {
             iframeRef.current.src = `${pdfUrl}#page=${pages[currentPageIndex]}`;
         }
-    }, [currentPageIndex, iframeRef]); // Update source only when page changes or ref changes
+    }, [currentPageIndex, iframeRef]);
 
     const goToPage = (pageIndex: number) => {
         if (pageIndex >= 0 && pageIndex < pages.length) {

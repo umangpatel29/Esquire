@@ -11,7 +11,7 @@ const ProjectSpace = () => {
 
     return (
         <div className=''>
-            <div className={`h-7`}>
+            <div>
                 <button className={` ${spaceDocument === 'financing' ? 'hidden' : 'slide-in'} text-[14px] font-medium flex gap-1 items-center`} onClick={() => setSpaceDocument('financing')}>
                     <Image src='/icons/downarrowsvg.svg' alt='' width={11} height={11} className='rotate-90' />
                     <span>Go Back</span>

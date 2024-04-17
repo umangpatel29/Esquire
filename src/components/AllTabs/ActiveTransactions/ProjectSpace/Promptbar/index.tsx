@@ -34,7 +34,7 @@ const ChatInterface: React.FC = () => {
     };
 
     return (
-        <div className='border px-3 py-1 w-[67%] my-6 flex shadow-md flex-col justify-center border-gray-300 rounded-md'>
+        <div className='border px-3 py-1 w-[65%] my-4 flex shadow-md flex-col justify-center border-gray-300 rounded-md'>
             <div className='flex gap-2 items-center justify-between'>
                 <div className='flex gap-2 w-full items-center'>
                     <div className='h-[25px] w-[23px] overflow-hidden'>
@@ -50,24 +50,24 @@ const ChatInterface: React.FC = () => {
                                 e.currentTarget.value = '';
                             }
                         }}
-                        className='px-2 py-1 h-10 w-full font-medium'
+                        className='px-2 py-1 h-8 text-[14px] w-full font-medium'
                     />
                 </div>
                 <div onClick={() => handleUserInput()}>
-                    <Image src='/icons/up-arrow.svg' width={40} height={40} alt='' className='cursor-pointer' />
+                    <Image src='/icons/up-arrow.svg' width={35} height={35} alt='' className='cursor-pointer' />
                 </div>
             </div>
             {
                 (messages.length > 0 || spinners === true) && <>
                     {
                         spinners ?
-                            <div className='flex gap-2 p-3'>
-                                <div className='font-medium'>Esquire:</div><Spinner />
+                            <div className='flex gap-2 items-center p-3'>
+                                <div className='font-medium text-[14px]'>Esquire:</div><Spinner />
                             </div>
                             :
                             <div className='py-3 pl-3 pr-4'>
                                 {messages.map((message, index) => (
-                                    <div key={index} className='font-medium'>{message}</div>
+                                    <div key={index} className='font-medium text-[14px]'>{message}</div>
                                 ))}
                             </div>
                     }

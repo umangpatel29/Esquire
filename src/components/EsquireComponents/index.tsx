@@ -18,16 +18,16 @@ const EsquireComponents = () => {
 
     return (
         <div className=''>
-            <div className='sticky top-[90px] h-[50px] items-center flex bg-white z-20'>
-                <div className='container mx-auto'>
+            <div className='sticky top-[90px] items-center flex bg-white z-20'>
+                <div className='container border-l mx-auto px-6'>
                     <AllTabs />
                 </div>
             </div>
-            <div className='flex border-t container mx-auto gap-2 z-10'>
-                <div className='w-[250px] sticky left-0'>
+            <div className='flex container border-l border-t mx-auto gap-2 z-10'>
+                <div className='w-[280px] pl-3 sticky left-0'>
                     <Sidebar />
                 </div>
-                <div className='border-l mb-10 p-8 w-[calc(100%-250px)]'>
+                <div className='border-l mb-10 px-8 pt-7 w-[calc(100%-280px)]'>
                     <TabsCildrenComponents>
                         {activeComponent}
                     </TabsCildrenComponents>

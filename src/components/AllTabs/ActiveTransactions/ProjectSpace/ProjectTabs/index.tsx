@@ -33,13 +33,13 @@ const ProjectTabs = () => {
     return (
         <div className=''>
             <div>
-                <h1 className='text-[25px] underline text-cyan-600 font-medium'>Project Space – Rocket LLC</h1>
+                <h1 className='text-[18px] underline text-cyan-600 font-medium'>Project Space – Rocket LLC</h1>
             </div>
-            <div className='flex gap-4 my-4 w-max items-center bg-slate-100 rounded-full border-y-2 px-4 py-2'>
+            <div className='flex gap-4 my-2 w-max items-center bg-slate-100 rounded-full border-y-2 px-[27px] py-2'>
                 {
                     tabs.map((item, id) => (
                         <>
-                            <div className={` ${activeProjectTab >= id ? 'font-semibold text-black' : 'font-medium text-gray-700'} text-[16px] cursor-pointer`}
+                            <div className={` ${activeProjectTab >= id ? 'font-semibold text-black' : 'font-medium text-gray-700'} text-[14px] cursor-pointer`}
                                 onClick={() => handleActiveTab(id)}
                                 key={id}>{item.name}</div>
                             {

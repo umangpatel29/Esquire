@@ -12,9 +12,9 @@ function Spinner() {
 
     return (
         <div className="sweet-loading">
-            <div className="flex ga-2 items-end">
-                <div className="font-medium ">Loading</div>
-                <PulseLoader color="#3b3a39" loading={loading} size={4} />
+            <div className="flex items-end">
+                <div className="font-medium text-[14px]">Loading</div>
+                <PulseLoader color="#3b3a39" loading={loading} size={2} />
             </div>
         </div>
     );

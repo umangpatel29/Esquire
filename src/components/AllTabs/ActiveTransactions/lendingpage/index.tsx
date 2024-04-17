@@ -71,14 +71,14 @@ const ActiveTransactionLendingPage = () => {
       {/* project spacee */}
       <div>
         <div>
-          <h1 className='text-[25px] underline text-black font-medium'>Project Space – Rocket LLC</h1>
-          <h3 className='text-cyan-600 font-medium'>Transaction Status: LOI signed on 3/26/2024. Target SPA signing on 4/26/2024.</h3>
+          <h1 className='text-[18px] trasking-[12px] underline text-black font-medium'>Project Space – Rocket LLC</h1>
+          <h3 className='text-cyan-600 text-[15px]'>Transaction Status: LOI signed on 3/26/2024. Target SPA signing on 4/26/2024.</h3>
         </div>
-        <div className='flex flex-col gap-3 ml-5'>
+        <div className='flex flex-col ml-5'>
           <div className='flex flex-col gap-1 mt-2'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
               <li>
-                <span className='text-black text-[18px] font-medium'>
+                <span className='text-black text-[15px] font-medium'>
                   Key Active Legal Docs:
                 </span>
               </li>
@@ -93,9 +93,9 @@ const ActiveTransactionLendingPage = () => {
                       leagalDocs && leagalDocs.map((item, index) => (
                         <div key={index}>
                           <ul style={{ listStyleType: 'circle' }} className='ml-11'>
-                            <li className='text-black text-[16px]'>{item.name}
+                            <li className='text-black text-[14px]'>{item.name}
                               {item.value.map((value, id) => (
-                                <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                <span key={id} className='text-cyan-600 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
                               ))}
                             </li>
                           </ul>
@@ -110,7 +110,7 @@ const ActiveTransactionLendingPage = () => {
           <div className='flex flex-col gap-1 mt-2'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setIsOpen2(!isOpen2)}>
               <li>
-                <span className='text-black text-[18px] font-medium'>
+                <span className='text-black text-[15px] font-medium'>
                   Key Transaction Files
                 </span>
               </li>
@@ -119,15 +119,15 @@ const ActiveTransactionLendingPage = () => {
 
             {
               isOpen2 && (
-                <div className='slide-in'>
+                <div className={`slide-in`}>
                   <div>
                     {
                       transactionDocs && transactionDocs.map((item, index) => (
                         <div key={index}>
                           <ul style={{ listStyleType: 'circle' }} className='ml-11'>
-                            <li className='text-black text-[16px]'>{item.name}
+                            <li className='text-black text-[14px]'>{item.name}
                               {item.value.map((value, id) => (
-                                <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                <span key={id} className='text-cyan-600 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
                               ))}
                             </li>
                           </ul>
@@ -140,9 +140,9 @@ const ActiveTransactionLendingPage = () => {
             }
 
           </div>
-          <div>
+          <div className='mt-1'>
             <li>
-              <span className='text-cyan-700 cursor-pointer text-[18px] font-normal hover:font-medium duration-500'>Master Diligence Tracker</span>
+              <span className='text-cyan-600 cursor-pointer text-[15px] font-normal hover:font-medium duration-300'>Master Diligence Tracker</span>
             </li>
           </div>
         </div>
@@ -151,14 +151,14 @@ const ActiveTransactionLendingPage = () => {
       {/* project spot */}
       <div>
         <div>
-          <h1 className='text-[25px] underline text-black font-medium'>Project Spot - Cleaning LLC</h1>
-          <h3 className='text-cyan-600 font-medium'>Transaction Status: IOI signed on 3/22/2024. LOIs are due 4/22/2024 at 5PM ET.</h3>
+          <h1 className='text-[18px] trasking-[12px] underline text-black font-medium'>Project Spot - Cleaning LLC</h1>
+          <h3 className='text-cyan-600 text-[15px]'>Transaction Status: IOI signed on 3/22/2024. LOIs are due 4/22/2024 at 5PM ET.</h3>
         </div>
-        <div className='flex flex-col gap-3 ml-5'>
+        <div className='flex flex-col ml-5'>
           <div className='flex flex-col gap-1 mt-2'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setIsOpenspot(!isOpenspot)}>
               <li>
-                <span className='text-black text-[18px] font-medium'>
+                <span className='text-black text-[15px] font-medium'>
                   Key Active Legal Docs:
                 </span>
               </li>
@@ -173,9 +173,9 @@ const ActiveTransactionLendingPage = () => {
                       projectspot && projectspot.map((item, index) => (
                         <div key={index}>
                           <ul style={{ listStyleType: 'circle' }} className='ml-11'>
-                            <li className='text-black text-[16px]'>{item.name}
+                            <li className='text-black text-[14px]'>{item.name}
                               {item.value.map((value, id) => (
-                                <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                <span key={id} className='text-cyan-600 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
                               ))}
                             </li>
                           </ul>
@@ -190,7 +190,7 @@ const ActiveTransactionLendingPage = () => {
           <div className='flex flex-col gap-1 mt-2'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setSpot2(!spot2)}>
               <li>
-                <span className='text-black text-[18px] font-medium'>
+                <span className='text-black text-[15px] font-medium'>
                   Key Transaction Files
                 </span>
               </li>
@@ -205,9 +205,9 @@ const ActiveTransactionLendingPage = () => {
                       spot2array && spot2array.map((item, index) => (
                         <div key={index}>
                           <ul style={{ listStyleType: 'circle' }} className='ml-11'>
-                            <li className='text-black text-[16px]'>{item.name}
+                            <li className='text-black text-[14px]'>{item.name}
                               {item.value.map((value, id) => (
-                                <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                <span key={id} className='text-cyan-600 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
                               ))}
                             </li>
                           </ul>
@@ -220,9 +220,9 @@ const ActiveTransactionLendingPage = () => {
             }
 
           </div>
-          <div>
+          <div className='mt-1'>
             <li>
-              <span className='text-cyan-700 cursor-pointer text-[18px] font-medium'>Master Diligence Tracker</span>
+              <span className='text-cyan-600 cursor-pointer text-[15px] font-normal hover:font-medium duration-300'>Master Diligence Tracker</span>
             </li>
           </div>
         </div>
@@ -231,14 +231,14 @@ const ActiveTransactionLendingPage = () => {
       {/* project starss */}
       <div>
         <div>
-          <h1 className='text-[25px] underline text-black font-medium'>Project Star - Script LLC</h1>
-          <h3 className='text-cyan-600 font-medium'>Transaction Status: SPA signed on 2/23/2024. Target closing week of 6/15/24.</h3>
+          <h1 className='text-[18px] trasking-[12px] underline text-black font-medium'>Project Star - Script LLC</h1>
+          <h3 className='text-cyan-600 text-[15px]'>Transaction Status: SPA signed on 2/23/2024. Target closing week of 6/15/24.</h3>
         </div>
-        <div className='flex flex-col gap-3 ml-5'>
+        <div className='flex flex-col ml-5'>
           <div className='flex flex-col gap-1 mt-2'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setStar(!star)}>
               <li>
-                <span className='text-black text-[18px] font-medium'>
+                <span className='text-black text-[15px] font-medium'>
                   Key Active Legal Docs:
                 </span>
               </li>
@@ -253,9 +253,9 @@ const ActiveTransactionLendingPage = () => {
                       ProjectStar && ProjectStar.map((item, index) => (
                         <div key={index}>
                           <ul style={{ listStyleType: 'circle' }} className='ml-11'>
-                            <li className='text-black text-[16px]'>{item.name}
+                            <li className='text-black text-[14px]'>{item.name}
                               {item.value.map((value, id) => (
-                                <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                <span key={id} className='text-cyan-600 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
                               ))}
                             </li>
                           </ul>
@@ -270,7 +270,7 @@ const ActiveTransactionLendingPage = () => {
           <div className='flex flex-col gap-1 mt-2'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setStar2(!star2)}>
               <li>
-                <span className='text-black text-[18px] font-medium'>
+                <span className='text-black text-[15px] font-medium'>
                   Key Transaction Files
                 </span>
               </li>
@@ -285,9 +285,9 @@ const ActiveTransactionLendingPage = () => {
                       projectStarkey && projectStarkey.map((item, index) => (
                         <div key={index}>
                           <ul style={{ listStyleType: 'circle' }} className='ml-11'>
-                            <li className='text-black text-[16px]'>{item.name}
+                            <li className='text-black text-[14px]'>{item.name}
                               {item.value.map((value, id) => (
-                                <span key={id} className='text-cyan-700 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
+                                <span key={id} className='text-cyan-600 cursor-pointer font-normal hover:font-medium duration-300'> {value}</span>
                               ))}
                             </li>
                           </ul>
@@ -300,9 +300,9 @@ const ActiveTransactionLendingPage = () => {
             }
 
           </div>
-          <div>
+          <div className='mt-1'>
             <li>
-              <span className='text-cyan-700 cursor-pointer text-[18px] font-medium'>Master Diligence Tracker</span>
+              <span className='text-cyan-600 cursor-pointer text-[15px] font-normal hover:font-medium duration-300'>Master Diligence Tracker</span>
             </li>
           </div>
         </div>
