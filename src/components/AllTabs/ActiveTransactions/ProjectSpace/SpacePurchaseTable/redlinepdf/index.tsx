@@ -8,7 +8,7 @@ interface PdfModalProps {
     isRedlinePdf: boolean;
 }
 
-const pdfUrl = '/redlinev4.pdf';
+const pdfUrl = '/redlinev4.docx';
 const pages = [0, 4, 30, 33, 50, 70];
 
 const PdfModal: React.FC<PdfModalProps> = ({ setIsRedlinePdf, isRedlinePdf }) => {
@@ -57,7 +57,7 @@ const PdfModal: React.FC<PdfModalProps> = ({ setIsRedlinePdf, isRedlinePdf }) =>
                 </div>
 
                 <div className='flex flex-row h-[90%] mt-6 border-b'>
-                    <iframe src='/redline.pdf' title="PDF Viewer" width="100%" height="100%" className='mr-4 border-b' />
+                    <iframe src='/redlinev4.docx' title="PDF Viewer" width="100%" height="100%" className='mr-4 border-b' />
                     {/* <iframe src={`${pdfUrl}#page=${pages[currentPageIndex]}`} title="PDF Viewer" width="100%" height="100%" className='mr-4 border-b' ref={iframeRef} /> */}
                     {/* <div className='w-[25%] border rounded-md bg-slate-100 p-3'>
                         <p className='text-center font-medium underline text-[24px]'>Comments</p>

@@ -98,7 +98,7 @@ const PurchaseTable = () => {
                             ))}
                         </tbody>
                     </table>
-                    <button onClick={() => setShowColumn(!showColumn)} className='ml-2 absolute top-[160px] -right-7'>
+                    <button onClick={() => setShowColumn(!showColumn)} className='ml-2 absolute opacity-20 top-[160px] -right-7'>
                         <Image src='/icons/magicstick.png' width={20} height={20} alt='' />
                     </button>
                 </div>
@@ -110,7 +110,8 @@ const PurchaseTable = () => {
             }
             {
                 isRedlinePdf &&
-                <PdfModal setIsRedlinePdf={() => setIsRedlinePdf(false)} isRedlinePdf={isRedlinePdf} />
+                <iframe src='/redlinev4.docx' title="pdf Viewer" width="100%" height="100%" className='mr-4 border-b' />
+                // <PdfModal setIsRedlinePdf={() => setIsRedlinePdf(false)} isRedlinePdf={isRedlinePdf} />
             }
 
         </div >
