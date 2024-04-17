@@ -89,7 +89,7 @@ const Sidebar = () => {
                                     ActiveDiligenceTrackersConstant.map((item, id) => (
                                         <div key={id}>
                                             <div className='flex gap-3 mt-2 items-center'>
-                                                <li onClick={() => handleSidebar(item.name)} className={`${activeTab === item.name ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
+                                                <li onClick={() => handleSidebar(item.link)} className={`${activeTab === item.link ? 'font-semibold' : ' font-normal'} ml-4 text-sm text-black cursor-pointer`}>{item.name}</li>
                                             </div>
                                         </div>
                                     ))
