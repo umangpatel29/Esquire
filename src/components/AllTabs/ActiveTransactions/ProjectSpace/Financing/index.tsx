@@ -83,7 +83,7 @@ const Financing = ({ onchange }: handleonchangeType) => {
                         <div className='flex flex-col gap-1 mt-2'>
                             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setCompany(!company)}>
                                 <li>
-                                    <span className='text-black text-[16px] font-medium'>
+                                    <span className='text-black text-[15px] font-medium'>
                                         Company Documents
                                     </span>
                                 </li>
@@ -117,7 +117,7 @@ const Financing = ({ onchange }: handleonchangeType) => {
                         <div className='flex flex-col gap-1'>
                             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
                                 <li>
-                                    <span className='text-black text-[16px] font-medium'>
+                                    <span className='text-black text-[15px] font-medium'>
                                         Auction Process
                                     </span>
                                 </li>
@@ -158,7 +158,7 @@ const Financing = ({ onchange }: handleonchangeType) => {
                         <div className='flex flex-col gap-1'>
                             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setIsDiligence(!isDiligence)}>
                                 <li>
-                                    <span className='text-black text-[16px] font-medium'>
+                                    <span className='text-black text-[15px] font-medium'>
                                         Master Diligence Tracker
                                     </span>
                                 </li>

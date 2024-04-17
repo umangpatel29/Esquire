@@ -29,7 +29,7 @@ const FinanicingProcess = () => {
         <div className='flex flex-col gap-2 ml-[21px]'>
             <div className='flex gap-4 items-center cursor-pointer' onClick={() => setIsOpenFinancing(!isOpenFinancing)}>
                 <li>
-                    <span className='text-black text-[16px] font-medium'>
+                    <span className='text-black text-[15px] font-medium'>
                         Financing Process
                     </span>
                 </li>

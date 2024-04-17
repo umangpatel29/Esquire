@@ -10,7 +10,7 @@ function MonitoringTable() {
         ['Total', '$21,906', '$102,000', '$30,600', '$29,070', '$30,524', '(4.1%)', '$229,500', '$227,237', '2.25x', '23%', '$49,265', '$49,289 ', '$47,025 ', '$2,264 ', '1.70x', '0.08x'],
     ];
 
-    const customClass = 'text-center border font-medium text-[16px] underline px-7 py-2';
+    const customClass = 'text-center border font-medium text-[15px] underline px-7 py-2';
 
     return (
         <div className="overflow-x-auto">

@@ -7,15 +7,13 @@ const InitiateTransaction = () => {
   return (
     <div className='flex flex-col gap-2'>
       <div>
-        <div className='text-[18px] font-medium'>
+        <div className='text-[16px] font-medium'>
           New Investment :
         </div>
         <div className='flex flex-col gap-2 mt-1 ml-3'>
           <div>
             <div className='flex gap-2'>
-              <li className='cursor-pointer font-normal text-[16px]'>Private Company Acquisition</li>
-              {/* <input type="checkbox" className='cursor-pointer' id='1' />
-              <label htmlFor="1" className='cursor-pointer'>Private Company Acquisition</label> */}
+              <li className='cursor-pointer font-normal text-[14px]'>Private Company Acquisition</li>
             </div>
             {
               privateCompany &&
@@ -30,7 +28,7 @@ const InitiateTransaction = () => {
           </div>
           <div>
             <div className='flex gap-2'>
-              <li className='cursor-pointer text-[16px]'>Private Company Acquisition</li>
+              <li className='cursor-pointer text-[14px]'>Private Company Acquisition</li>
             </div>
             {
               publicCompany &&
@@ -45,26 +43,24 @@ const InitiateTransaction = () => {
           </div>
           <div>
             <div className='flex gap-2'>
-              <li className='cursor-pointer text-[16px]'>Growth Equity Investment </li>
-              {/* <input type="checkbox" className='cursor-pointer' id='3' />
-              <label htmlFor="3" className='cursor-pointer'></label> */}
+              <li className='cursor-pointer text-[14px]'>Growth Equity Investment </li>
             </div>
           </div>
         </div>
       </div>
       <div>
-        <div className='text-[18px] font-medium '>
+        <div className='text-[16px] font-medium '>
           Existing PortCo :
         </div>
         <div className='flex flex-col gap-1 ml-8 mt-1 '>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Bolt-on Acquisition</li>
+              <li className='text-[14px]'>Bolt-on Acquisition</li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Debt Capital Raise</li>
+              <li className='text-[14px]'>Debt Capital Raise</li>
               <ul style={{ listStyle: 'square' }} className='ml-5 text-[14px]'>
                 <li>Credit Financing</li>
                 <li>Credit Refinancing </li>
@@ -73,7 +69,7 @@ const InitiateTransaction = () => {
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Equity Capital Raise </li>
+              <li className='text-[14px]'>Equity Capital Raise </li>
               <ul style={{ listStyle: 'square' }} className='ml-5 text-[14px]'>
                 <li>Equity Financing </li>
                 <li>Preferred Equity Refinancing</li>
@@ -82,7 +78,7 @@ const InitiateTransaction = () => {
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Disposition </li>
+              <li className='text-[14px]'>Disposition </li>
               <ul style={{ listStyle: 'square' }} className='ml-5 text-[14px]'>
                 <li>Sale </li>
                 <li>IPO</li>
@@ -92,22 +88,22 @@ const InitiateTransaction = () => {
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Bankruptcy</li>
+              <li className='text-[14px]'>Bankruptcy</li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Executive or Management Agreement </li>
+              <li className='text-[14px]'>Executive or Management Agreement </li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Key Agreement (IP, Commercial Contracts, JV)</li>
+              <li className='text-[14px]'>Key Agreement (IP, Commercial Contracts, JV)</li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
-              <li className='text-[16px]'>Sale Leaseback</li>
+              <li className='text-[14px]'>Sale Leaseback</li>
             </ul>
           </div>
         </div>
