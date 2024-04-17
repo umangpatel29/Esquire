@@ -31,12 +31,12 @@ const PurchaseTable = () => {
         <div className='w-full flex flex-col gap-4'>
             <div>
                 <div className='flex gap-4 items-center cursor-pointer' onClick={() => setISopenTable(!isOpenTable)}>
-                    <div className='text-black text-[18px] font-medium'>
+                    <div className='text-black text-[16px] font-medium'>
                         Stock Purchase Agreement
                     </div>
                     <Image src='/icons/downarrowsvg.svg' alt='' width={15} height={15} className={`${isOpenTable ? 'duration-500 rotate-180' : 'duration-500 rotate-0'}`} />
                 </div>
-                <p className='text-cyan-600 font-medium'>See Previous Prompts and comparisons</p>
+                <p className='text-cyan-600 text-[13px]'>See Previous Prompts and comparisons</p>
             </div>
             {
                 !isOpenTable &&
@@ -45,13 +45,13 @@ const PurchaseTable = () => {
                         <thead>
                             <tr className='border'>
                                 {headers.map((item, index) => (
-                                    <th key={index} className='text-start p-3 border underline'>{item}</th>
+                                    <th key={index} className='text-start p-3 border font-medium underline text-[15px]'>{item}</th>
                                 ))}
                             </tr>
                         </thead>
                         <tbody>
                             {data.map((row, index) => (
-                                <tr key={index} className='border'>
+                                <tr key={index} className='border text-[14px]'>
                                     <td className='text-start border p-2'>{row[0]}</td>
                                     <td className='text-start border p-2'>{row[1]}</td>
                                     <td className='text-start border p-2'>{row[2]}</td>
@@ -98,7 +98,7 @@ const PurchaseTable = () => {
                             ))}
                         </tbody>
                     </table>
-                    <button onClick={() => setShowColumn(!showColumn)} className='ml-2 absolute top-[168px] -right-7'>
+                    <button onClick={() => setShowColumn(!showColumn)} className='ml-2 absolute top-[160px] -right-7'>
                         <Image src='/icons/magicstick.png' width={20} height={20} alt='' />
                     </button>
                 </div>
