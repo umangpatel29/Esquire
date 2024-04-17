@@ -8,7 +8,7 @@ interface PdfModalProps {
     isRedlinePdf: boolean;
 }
 
-const pdfUrl = '/redline.pdf';
+const pdfUrl = '/redlinev4.pdf';
 const pages = [0, 4, 30, 33, 50, 70];
 
 const PdfModal: React.FC<PdfModalProps> = ({ setIsRedlinePdf, isRedlinePdf }) => {
