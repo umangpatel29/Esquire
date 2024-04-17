@@ -23,8 +23,8 @@ const EsquireComponents = () => {
                     <AllTabs />
                 </div>
             </div>
-            <div className='flex container border-l h-[calc(100% - 163px)] mx-auto gap-2 z-10'>
-                <div className='w-[280px] border-r pb-[100px] px-3 sticky left-0'>
+            <div className='flex container border-l h-auto mx-auto gap-2 z-10'>
+                <div className='w-[280px] border-r  pb-[100px] px-3 sticky left-0'>
                     <Sidebar />
                 </div>
                 <div className='mb-10 px-8 pt-7 h-screen w-[calc(100%-280px)]'>
