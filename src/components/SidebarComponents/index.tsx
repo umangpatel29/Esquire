@@ -8,7 +8,7 @@ import Tab6Sidebar from './Tab6Sidebar';
 const Sidebar = () => {
 
     const { activeTab, setActiveTab, activeHeader } = useTabContext()
-    const [isFormerTrasaction, setIsFormerTrasaction] = useState(false)
+    const [isFormerTrasaction, setIsFormerTrasaction] = useState(true)
 
     const handleSidebar = (name: string) => {
         setActiveTab(name)

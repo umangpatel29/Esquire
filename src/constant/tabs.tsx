@@ -121,7 +121,7 @@ export const ActiveDiligenceTrackersConstant = [
     },
     {
         id: 1,
-        name: 'Project spot',
+        name: 'Project Spot',
         link: 'Diligence Project spot'
     },
     {

@@ -34,7 +34,7 @@ const Tab6Sidebar: React.FC = () => {
     const CapTableManagementConstant2 = [
         { name: 'Dashboard', value: [] },
         { name: 'Cap Table', value: [] },
-        { name: 'WaterFall Modeling', value: [] },
+        { name: 'Waterfall Modeling', value: [] },
         { name: 'Draft Option Grant', value: [] },
         { name: 'Draft Certificate', value: [] },
         { name: 'Securities', value: ['Shares', 'Equity Awards', 'Warrents', 'Covertibles', 'Manage Share', 'Classes', 'Equity Plans', 'Securities', 'Template'] },

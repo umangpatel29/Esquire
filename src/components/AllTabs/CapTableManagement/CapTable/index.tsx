@@ -24,7 +24,7 @@ const CaptaTable = () => {
                 </div>
             </div>
             <div>
-                <div className='mb-3 font-medium text-[16px] underline'>Most Recent Transactions :</div>
+                <div className='mb-3 font-medium text-[16px] underline'>Most Recent Transactions:</div>
                 <div>
                     <table>
                         <tr className='border bg-gray-100 p-3 text-[15px] border-gray-300'>
@@ -55,7 +55,7 @@ const CaptaTable = () => {
                 </div>
             </div>
             <div>
-                <div className='font-medium text-[16px] underline my-3 text-cyan-600'>Cap Table Summary :</div>
+                <div className='font-medium text-[16px] underline my-3 text-cyan-600'>Cap Table Summary:</div>
                 <div>
                     <table>
                         <thead>

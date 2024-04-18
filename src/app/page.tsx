@@ -16,6 +16,7 @@ export default function Home() {
         <div className="sticky top-0 z-20">
           <Header />
         </div>
+
         <div className="h-[calc(100vh-90px)] z-10">
           <EsquireComponents />
         </div>

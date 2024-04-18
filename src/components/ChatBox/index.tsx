@@ -1,11 +1,12 @@
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const response = 'Sure, see attached. Let me know if you have any follow-up questions.';
-const pdfUrl = '/chatbox.pdf';
+const pdfUrl = '/chatbox.xlsx';
 
 const ChatBox = () => {
     const [isChatOpen, setIsChatOpen] = useState(false);
+    const [isxlsxfile, setIsxlsxfile] = useState(false)
     const [messages, setMessages] = useState<{ text: string | JSX.Element; isUser: boolean; isPdfLink?: boolean; }[]>([]);
 
     const handleUserInput = (input: string) => {
@@ -25,6 +26,12 @@ const ChatBox = () => {
             });
         }, 2000);
     };
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsxlsxfile(false);
+        }, 500)
+    }, [isxlsxfile])
 
     return (
         <div className='fixed flex items-end gap-2 right-10 bottom-10'>
@@ -50,9 +57,12 @@ const ChatBox = () => {
                                     {
                                         message.isPdfLink &&
 
-                                        <a href={pdfUrl} download className='bg-red-700 rounded-md p-3 my-2 flex justify-between items-center text-white font-medium'>
-                                            <span>Esquire.pdf</span> <Image src='/icons/up-arrow.svg' className='rotate-180' height={25} width={25} alt='' />
-                                        </a>
+                                        <div className='bg-red-700 relative rounded-md p-3 my-2 flex justify-between items-center cursor-pointer text-white font-medium h-[40px]' onClick={() => setIsxlsxfile(true)}>
+                                            {isxlsxfile &&
+                                                <iframe src='/chtbox.xlsx' title="pdf Viewer" width="1px" height="1px" className='absolute top-0' />
+                                            }
+                                            <span>Esquire.xlsx</span> <Image src='/icons/up-arrow.svg' className='rotate-180' height={25} width={25} alt='' />
+                                        </div>
                                     }
                                 </span>
                             </div>
@@ -87,6 +97,7 @@ const ChatBox = () => {
                     )}
                 </div>
             </div>
+
         </div>
     );
 };
