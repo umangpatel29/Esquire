@@ -20,13 +20,13 @@ const InitiateTransaction = () => {
               <div className='ml-10 text-[14px] '>
                 <ul style={{ listStyle: 'square' }}>
                   <li>
-                    <span className='text-cyan-600 cursor-pointer font-medium hover:font-semibold duration-300 font medium'>Solicited</span>
+                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Solicited</span>
                   </li>
                   <li>
-                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Unsolicited</span>
+                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Unsolicited</span>
                   </li>
                   <li>
-                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Carve-Out</span>
+                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Carve-Out</span>
                   </li>
                 </ul>
               </div>
@@ -41,13 +41,13 @@ const InitiateTransaction = () => {
               <div className='ml-10 text-[14px]'>
                 <ul style={{ listStyle: 'square' }}>
                   <li>
-                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Solicited</span>
+                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Solicited</span>
                   </li>
                   <li>
-                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Unsolicited</span>
+                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Unsolicited</span>
                   </li>
                   <li>
-                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Carve-Out</span>
+                    <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Carve-Out</span>
                   </li>
                 </ul>
               </div>
@@ -56,7 +56,7 @@ const InitiateTransaction = () => {
           <div>
             <div className='flex gap-2'>
               <li>
-                <span className='cursor-pointer text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Growth Equity Investment </span>
+                <span className='cursor-pointer text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Growth Equity Investment </span>
               </li>
             </div>
           </div>
@@ -70,7 +70,7 @@ const InitiateTransaction = () => {
           <div>
             <ul style={{ listStyle: 'disc' }}>
               <li>
-                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Bolt-on Acquisition</span>
+                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Bolt-on Acquisition</span>
               </li>
             </ul>
           </div>
@@ -79,10 +79,10 @@ const InitiateTransaction = () => {
               <li className='text-[15px]'>Debt Capital Raise</li>
               <ul style={{ listStyle: 'square' }} className='ml-5 text-[14px]'>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Credit Financing</span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Credit Financing</span>
                 </li>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Credit Refinancing </span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Credit Refinancing </span>
                 </li>
               </ul>
             </ul>
@@ -92,10 +92,10 @@ const InitiateTransaction = () => {
               <li className='text-[15px]'>Equity Capital Raise </li>
               <ul style={{ listStyle: 'square' }} className='ml-5 text-[14px]'>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Equity Financing </span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Equity Financing </span>
                 </li>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Preferred Equity Refinancing</span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Preferred Equity Refinancing</span>
                 </li>
               </ul>
             </ul>
@@ -105,13 +105,13 @@ const InitiateTransaction = () => {
               <li className='text-[15px]'>Disposition </li>
               <ul style={{ listStyle: 'square' }} className='ml-5 text-[14px]'>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Sale </span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Sale </span>
                 </li>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>IPO</span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>IPO</span>
                 </li>
                 <li>
-                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Other Divestiture (Asset, Real Estate)</span>
+                  <span className='text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Other Divestiture (Asset, Real Estate)</span>
                 </li>
               </ul>
             </ul>
@@ -119,28 +119,28 @@ const InitiateTransaction = () => {
           <div>
             <ul style={{ listStyle: 'disc' }}>
               <li>
-                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Bankruptcy</span>
+                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Bankruptcy</span>
               </li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
               <li>
-                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Executive or Management Agreement </span>
+                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Executive or Management Agreement </span>
               </li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
               <li>
-                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Key Agreement (IP, Commercial Contracts, JV)</span>
+                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Key Agreement (IP, Commercial Contracts, JV)</span>
               </li>
             </ul>
           </div>
           <div>
             <ul style={{ listStyle: 'disc' }}>
               <li>
-                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font medium'>Sale Leaseback</span>
+                <span className='text-[15px] text-cyan-600 cursor-pointer hover:font-semibold duration-300 font-medium'>Sale Leaseback</span>
               </li>
             </ul>
           </div>
